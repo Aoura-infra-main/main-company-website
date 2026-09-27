@@ -352,14 +352,8 @@ a {
 /* ── CARDS (General Usage) ── */
 .sp-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 32px;
-}
-
-@media(max-width:900px) {
-  .sp-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
 
 @media(max-width:768px) {
@@ -693,6 +687,17 @@ footer {
   margin-bottom: 10px;
   color: var(--grey-600);
   line-height: 1.6;
+}
+
+@media(max-width:1120px) and (min-width:769px) {
+  .nav-links a {
+    padding: 8px 10px;
+    font-size: 0.8rem;
+  }
+  .nav-contact-outline {
+    padding: 8px 12px;
+    font-size: 0.8rem;
+  }
 }
 
 @media(max-width:768px) {
